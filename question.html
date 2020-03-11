@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Question Form</title>
+    <link rel="stylesheet" href="styles/Externalstylesheet.css">
+    <style>
+      input:invalid {
+        border:2px dashed red;
+      }
+      input:valid {
+        border:2px solid black;
+      }
+     textarea:invalid {
+       border:2px dashed red;
+     }
+     textarea:valid {
+       border:2px solid black;
+     }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><img src = "Images/logo.jpg" height="70" width "70"> </td>
+        <td><h1>Online Shopping</h1></td>
+      </tr>
+    </table>
+    <p>How can we help you?</p>
+    <form> <fieldset>
+      <label>Name:</label>
+      <input type="text" maxlength="6" minlength="3" required> <br><br>
+      <select id="simple" name="simple" required>
+        <option selected >Topic</option>
+        <option  >My Account</option>
+        <option  >Data Privacy</option>
+        <option  >Payment</option>
+        <option  >Shipping and Delivery</option>
+        <option  >Return</option>
+      </select><br/><br/>
+      <label>Question:</label>
+      <textarea rows="4" cols="40" required></textarea><br><br>
+      <label> Email: </label>
+      <input type="email" id="email" name="email" mutiple required><br><br>
+      <label> Phone Number: +60 </label>
+      <input type="number" maxlength="6" required><br><br>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+    </form>
+  </body>
+</html>
